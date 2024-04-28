@@ -4,9 +4,6 @@
 # reopened with the relevant failures.
 #
 apiVersion: v1
-data:
-  accounts.liulaoshi: apiKey, login
-  accounts.max: apiKey, login
 kind: ConfigMap
 metadata:
   annotations:
