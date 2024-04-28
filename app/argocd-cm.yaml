@@ -1,20 +1,21 @@
-
-# Please edit the object below. Lines beginning with a '#' will be ignored,
-# and an empty file will abort the edit. If an error occurs while saving this file will be
-# reopened with the relevant failures.
-#
-apiVersion: v1
-kind: ConfigMap
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"accounts.liulaoshi":"apiKey, login","accounts.max":"apiKey, login"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2024-04-28T12:21:
-  creationTimestamp: "2024-04-28T12:21:26Z"
+  name: react01-front
   labels:
-    app.kubernetes.io/instance: test-app
-    app.kubernetes.io/name: argocd-cm
-    app.kubernetes.io/part-of: argocd
-  name: argocd-cm
-  namespace: argocd
-  resourceVersion: "9656"
-  uid: b7c8316f-1a62-4bdd-b9d8-b59a919eb875
+    app: react01-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react01-front
+  template:
+    metadata:
+      labels:
+        app: react01-front
+    spec:
+      containers:
+      - name: react01-front
+        image: nginx
+        ports:
+        - containerPort: 3000
