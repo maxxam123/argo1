@@ -16,3 +16,6 @@ metadata:
   namespace: argocd
   resourceVersion: "849"
   uid: b7c8316f-1a62-4bdd-b9d8-b59a919eb875
+data:
+  accounts.max: apiKey, login
+  accounts.liulaoshi: apiKey, login
