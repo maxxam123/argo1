@@ -14,3 +14,4 @@ data:
   accounts.xinli: apiKey, login
   accounts.lei: apiKey, login
   accounts.liulaoshi: apiKey, login
+  accounts.mianbao: apiKey, login
