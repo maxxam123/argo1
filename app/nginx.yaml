@@ -13,3 +13,4 @@ data:
   accounts.max: apiKey, login
   accounts.xinli: apiKey, login
   accounts.lei: apiKey, login
+  accounts.liulaoshi: apiKey, login
