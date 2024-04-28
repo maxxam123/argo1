@@ -6,7 +6,7 @@ metadata:
   labels:
     app: react01-front
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: react01-front
