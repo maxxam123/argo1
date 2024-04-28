@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: react01-front
+  namespace: max
   labels:
     app: react01-front
 spec:
